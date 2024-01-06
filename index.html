@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Helpa template</title>
+    <meta property="og:title" content="Helpa template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Karla;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-primary-700);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+      
+      <div class="home-container">
+        <div id="banner" data-persistence="true" class="banner-banner">
+          <div class="banner-captions">
+            <div class="banner-caption">
+              <span class="banner-text">
+                <span>
+                  Get updates and action alerts from Helpa by joining our
+                </span>
+              </span>
+              <a
+                href="https://medium.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="banner-link"
+              >
+                <span>newsletter</span>
+              </a>
+            </div>
+            <a href="https://medium.com" class="banner-link1">
+              <div class="banner-caption1">
+                <span class="banner-text1"><span>Join our</span></span>
+                <span class="banner-text2"><span>newsletter</span></span>
+              </div>
+            </a>
+          </div>
+          <div id="close" class="banner-close">
+            <svg viewBox="0 0 1024 1024" class="banner-icon">
+              <path
+                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        
+        <section class="home-hero">
+          <div class="home-main">
+            <div class="home-content">
+              <header data-thq="thq-navbar" class="home-navbar-interactive">
+                <div class="branding-branding branding-root-class-name2">
+                  <img
+                    alt="image"
+                    src="public/logo.svg"
+                    class="branding-logo"
+                  />
+                  <h2 class="branding-company-name">
+                    <span>HelpingHand</span>
+                  </h2>
+                </div>
+                <div
+                  data-thq="thq-navbar-nav"
+                  data-role="Nav"
+                  class="home-desktop-menu"
+                >
+                  <div class="home-links">
+                    <a href="#OurVision" class="home-link02 navLink">Our Vision</a>
+                    <a href="#JoinUs" class="home-link02 navLink">Join Us</a>
+                    <a href="#services" class="home-link03 navLink">Services</a>
+                    <a href="#contact" class="home-link03 navLink">Contact</a>
+                  </div>
+                </div>
+                <div data-thq="thq-burger-menu" class="home-burger-menu">
+                  <button class="button">
+                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                      <path
+                        d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+                  <div
+                    data-thq="thq-mobile-menu-nav"
+                    data-role="Nav"
+                    class="home-nav"
+                  >
+                    <div class="home-container1">
+                      <div class="branding-branding branding-root-class-name3">
+                        <img
+                          alt="image"
+                          src="public/logo.svg"
+                          class="branding-logo"
+                        />
+                        <h2 class="branding-company-name">
+                          <span>HelpingHand</span>
+                        </h2>
+                      </div>
+                      <div data-thq="thq-close-menu" class="home-menu-close">
+                        <svg viewBox="0 0 1024 1024" class="home-icon02">
+                          <path
+                            d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="home-icon-group">
+                      <svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="home-icon04"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path></svg>
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="home-icon06"
+                      >
+                        <path
+                          d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                        ></path></svg>
+                      <svg
+                        viewBox="0 0 602.2582857142856 1024"
+                        class="home-icon08"
+                      >
+                        <path
+                          d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <div class="home-hero-section">
+                <div class="home-header">
+                  <h1 class="home-heading">
+                    Strong Locality, Brighter Tomorrow
+                  </h1>
+                  <p class="home-caption01">
+                    Together, we strive to build a community where the
+                    well-being of one is the concern of all, creating a legacy
+                    of compassion for generations to come.
+                  </p>
+                </div>
+                <div class="home-buttons">
+                  <a href="404.html" class="home-link03 button">Ask for Help</a>
+                  <button class="home-button2 button">
+                    <span>join our community</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-details-container">
+            <div class="home-details">
+              <div class="home-category">
+                <img
+                  alt="image"
+                  src="public/details-1.svg"
+                  class="home-image"
+                />
+                <p class="home-text02">
+                  You Gain Personal Satisfaction: Helping others can be
+                  personally fulfilling. Knowing that you've made a positive
+                  impact can boost your self-esteem and overall sense of
+                  well-being.
+                </p>
+              </div>
+              <div class="home-category1">
+                <img
+                  alt="image"
+                  src="public/details-2.svg"
+                  class="home-image1"
+                />
+                <p class="home-text03">
+                  You Learn and Grow: Volunteering can also be a great way to
+                  learn new skills, gain experience, and broaden your
+                  perspective. It can enhance your resume and personal
+                  development.
+                </p>
+              </div>
+              <div class="home-category2">
+                <img
+                  alt="image"
+                  src="public/details-3.svg"
+                  class="home-image2"
+                />
+                <p class="home-text04">
+                  You Inspire Others: Your acts of kindness and volunteering can
+                  inspire others to get involved and contribute to their
+                  communities as well, creating a ripple effect of positive
+                  change.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="OurVision" class="home-mission">
+          <div class="home-content1">
+            <div class="home-main1">
+              <span class="home-title">Our&nbsp; vision</span>
+              <div class="home-header1">
+                <h2 class="home-heading1">
+                  "Our vision is to foster a thriving and compassionate
+                  community where no neighbor is left behind. We envision a
+                  place where kindness, support, and unity are the cornerstones
+                  of our neighborhood. In this future, individuals of all
+                  backgrounds and abilities come together to lend a helping
+                  hand, share resources, and offer solace to those in need. We
+                  dream of a society where isolation and neglect become relics
+                  of the past, replaced by bonds of friendship and mutual aid.
+                  Our website is a beacon guiding us toward this vision, a
+                  platform where every act of goodness ripples through our
+                  locality, shaping a brighter and more inclusive tomorrow."
+                </h2>
+              </div>
+            </div>
+            <div class="home-highlights"></div>
+          </div>
+          <div class="home-images"></div>
+          <div class="home-container2">
+            <video
+              src="public/external/Helpa.mp4"
+              poster="public/external/Helpa.mp4"
+              muted=""
+              autoplay=""
+              controls=""
+              class="home-video"
+            ></video>
+            <a
+              href="https://www.youtube.com/watch?v=2szQhR4oZtA"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link09"
+            >
+              <p class="home-caption02">YouTube</p>
+            </a>
+          </div>
+        </section>
+        <section id="services" class="home-donation-use">
+          <div class="home-header2">
+            <h2 class="home-heading2">Services</h2>
+            <p class="home-caption03">
+              <span>
+                assistance can be a valuable resource for the community. Here
+                are some different services and features offered by our website
+              </span>
+              <br />
+              <br />
+            </p>
+          </div>
+          <div class="home-accordion">
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-element"
+            >
+              <div class="home-header3">
+                <h3 class="home-text08">Pet Care Services:</h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name4"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-text09">
+                  <span>
+                    Connect pet owners with volunteers willing to walk dogs or
+                    provide pet care.
+                  </span>
+                  <br class="home-text11" />
+                  <br />
+                  <span>
+                    Offer a directory of local pet sitters or boarding
+                    facilities.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-element1"
+            >
+              <div class="home-header4">
+                <h3 class="home-text14">Assist Elders</h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name5"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-text15">
+                  <span class="home-text16">
+                    Assist Elders in their day to day activities
+                  </span>
+                  <span class="home-text17">.</span>
+                  <br class="home-text18" />
+                  <br class="home-text19" />
+                  <span class="home-text20">
+                    Helping in grocery shopping , office works&nbsp;
+                  </span>
+                  <br class="home-text21" />
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-element2"
+            >
+              <div class="home-header5">
+                <h3 class="home-text22">Transportation Assistance</h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name7"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-text23">
+                  <span class="home-text24">
+                    Connect individuals who need transportation with volunteer
+                    drivers.
+                  </span>
+                  <br class="home-text25" />
+                  <br class="home-text26" />
+                  <span class="home-text27">
+                    Offer options for scheduling rides and tracking driver
+                    availability.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-element3"
+            >
+              <div class="home-header6">
+                <h3 class="home-text28">Meal Delivery</h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name8"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg>
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-text29">
+                  <span>
+                    Organize meal delivery services for those who can't prepare
+                    their own meals.
+                  </span>
+                  <br class="home-text31" />
+                  <br />
+                  <span>Provide them home cooked nutritious meals.</span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <dangerous-html
+                html=" <script>
+ /*
+  Accordion - Code Embed
+  */
+  const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+  const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+  const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+  const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+  accordionContents.forEach((accordionContent) => {
+      accordionContent.style.display = 'none'; //Hides all accordion contents
+  });
+
+  accordionIconsClosed.forEach((icon) => {
+    icon.style.display = 'flex'
+  })
+
+  accordionIconsOpen.forEach((icon) => {
+    icon.style.display = 'none'
+  })
+
+  accordionContainers.forEach((accordionContainer, index) => {
+      accordionContainer.addEventListener('click', () => {
+          if (accordionContents[index].style.display === 'flex') {
+              // If the accordion is already open, close it
+              accordionContents[index].style.display = 'none';
+              accordionIconsClosed[index].style.display = 'flex';
+              accordionIconsOpen[index].style.display = 'none'
+          } else {
+              // If the accordion is closed, open it
+              accordionContents.forEach((accordionContent) => {
+                  accordionContent.style.display = 'none'; //Hides all accordion contents
+              });
+
+              accordionIconsClosed.forEach((accordionIcon) => {
+                  accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+              });
+
+              accordionIconsOpen.forEach((accordionIcon) => {
+                accordionIcon.style.display = 'none';
+              })
+              
+              accordionContents[index].style.display = 'flex'; // Shows accordion content
+              accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+              accordionIconsOpen[index].style.display = 'flex';
+          }
+      });
+  });
+</script>
+"
+              ></dangerous-html>
+            </div>
+          </div>
+        </section>
+        <section id="JoinUs" class="home-petitions">
+          <div class="home-images1">
+            <div class="home-container3">
+              <a
+                href="https://rb.gy/i8k6x"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link10"
+              >
+                <p class="home-caption04">Freepik</p>
+              </a>
+            </div>
+          </div>
+          <div class="home-content6">
+            <div class="home-main2">
+              <div class="home-header7">
+                <h2 class="home-heading3">
+                  "Ready to make a difference? Register with us and become a
+                  volunteer for a brighter world."
+                </h2>
+                <p class="home-caption05">
+                  Every effort, no matter how modest, can make a positive impact
+                  on individuals, communities, and society as a whole
+                </p>
+              </div>
+            </div>
+            <div class="home-button3">
+              <button class="button"><span>Sign up</span></button>
+            </div>
+          </div>
+        </section>
+        <section class="home-steps"></section>
+        <section id="thinking" class="home-quote-one">
+          <div class="home-quote-content">
+            <div class="home-container4">
+              <h2 class="home-quote">
+                "At HelpingHand , we are driven by the belief that together, we
+                can create stronger, more connected communities. Our journey
+                began with a simple idea - that neighbors helping neighbors
+                could transform lives. Founded by a group of passionate
+                individuals who share a commitment to making a positive impact,
+                we've built this platform as a hub of hope, support, and
+                solidarity. Our dedicated team, alongside an army of volunteers,
+                works tirelessly to bridge gaps, provide essential assistance,
+                and foster bonds within our neighborhood. Whether it's helping
+                seniors with groceries, offering a friendly chat, or coming
+                together during times of crisis, we are here to make a
+                difference. We invite you to join us, to be part of a movement
+                that is shaping a brighter, more compassionate future for our
+                community. Together, we're writing a story of care, resilience,
+                and unity, one neighbor at a time."
+              </h2>
+            </div>
+            <div class="home-quoted"></div>
+          </div>
+        </section>
+        <section class="home-quote-two">
+          <div class="home-content7">
+            <div class="home-quote-content1">
+              <h2 class="home-quote1">
+                "HelpingHand helped me find the best part time job while
+                studying. Their platform is user-friendly and their team is
+                incredibly supportive. Thank You for making my college
+                experience even better"
+              </h2>
+              <div class="home-quoted1">
+                <p class="home-caption06">Andrew Gonzalez</p>
+                <p class="home-caption07">@gonzal</p>
+              </div>
+            </div>
+            <div class="home-quote-content1">
+              <h2 class="home-quote1">
+                "Helping Hand is a great platform for all the people who are busy for day to day work"
+              </h2>
+              <div class="home-quoted1">
+                <p class="home-caption06">Ram Singh</p>
+                <p class="home-caption07">@ram</p>
+              </div>
+            </div>
+            <script>
+              let slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("home-quote-content1");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                slides[slideIndex-1].style.display = "block";  
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+              </script>
+          </div>
+        </section>
+        <section class="home-quote3">
+          <div class="home-content-faq">
+            <h2 class="faq-text">Frequently asked questions</h2><br><br>
+            <p class="faq-text">Click on the buttons to open the collapsible content.</p>
+
+            <button class="accordion">How to get help using your website?</button>
+            <div class="panel">
+              <p class="faq-text">On the first page, there is button called ask for help, you can click on that and fill the details. The people who can help you will connect to you.</p><br>
+            </div>
+
+            <button class="accordion">Can I register, to give and get help?</button>
+            <div class="panel">
+              <p class="faq-text">Yes, You can be both volunteer as well as client.</p><br>
+            </div>
+
+            <button class="accordion">What is the role of newsletter page?</button>
+            <div class="panel">
+              <p class="faq-text">Through newsletter page you can subscribe to our website. So whenever someone ask for help you will get an alert.If you are willing to help you can contact them.</p><br>
+            </div>
+
+            <button class="accordion">How to give suggestion?</button>
+            <div class="panel">
+              <p class="faq-text">To give suggestion you can click on the email id present on the contact us page. It will automatically direct you to your gmail and there you just have to write subject and content and then send it.</p><br>
+            </div>
+
+            <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+            
+          </div>
+        </section>
+        <div class="home-donate"></div>
+        <section class="home-updates">
+          <div class="home-content8">
+            <div class="home-details1">
+              <div class="home-header8">
+                <h2 class="home-heading4">
+                  Get updates and help alerts from HelpingHand by joining our
+                  newsletter
+                </h2>
+              </div>
+              <div class="home-action">
+                <div class="home-input">
+                  <input
+                    type="text"
+                    placeholder="Email address"
+                    class="home-textinput input"
+                  />
+                  <button class="button home-button5">Subscribe</button>
+                </div>
+                <div class="home-agreement">
+                  <div class="home-states">
+                    <div id="tos" class="home-checkbox"></div>
+                    <div id="tos-active" class="home-checkbox1">
+                      <svg viewBox="0 0 1024 1024" class="home-icon10">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="home-caption08">
+                    <label for="tos" class="home-normal">I agree to the</label>
+                    <label for="tos" class="home-bold">
+                      Terms and Conditions
+                    </label>
+                  </div>
+                  <div>
+                    <dangerous-html
+                      html="<script>
+// Create a boolean to represent the state of the toggle
+let tosToggle = false;
+
+// Add event listeners to the divs and labels
+document.getElementById('tos').addEventListener('click', toggleTos);
+document.getElementById('tos-active').addEventListener('click', toggleTos);
+document.querySelectorAll('label[for=tos]').forEach(label => label.addEventListener('click', toggleTos));
+
+// Define the toggleTos function to hide/show the elements based on the state of the toggle
+function toggleTos() {
+  if (tosToggle) {
+    document.getElementById('tos').style.display = 'flex';
+    document.getElementById('tos-active').style.display = 'none';
+  } else {
+    document.getElementById('tos').style.display = 'none';
+    document.getElementById('tos-active').style.display = 'flex';
+  }
+  tosToggle = !tosToggle;
+}
+</script>"
+                    ></dangerous-html>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-container5">
+              <div class="home-container6">
+                <div class="home-container7">
+                  <div class="home-slider">
+                    <div class="home-slides">
+                      <div class="home-slide slide-active slide"></div>
+                      <div class="slide">
+                        <img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1670991761566-534b07539db5?ixid=Mnw5MTMyMXwwfDF8YWxsfDEzfHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=500"
+                          class="home-image3"
+                        />
+                        <span class="home-text35">
+                          <span>This is a test slide</span>
+                          <br />
+                        </span>
+                      </div>
+                      <div class="slide">
+                        <img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1670087670280-7a3e71a7efa6?ixid=Mnw5MTMyMXwwfDF8YWxsfDE1fHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=500"
+                          class="home-image4"
+                        />
+                        <span class="home-text38">
+                          <span>This one also!</span>
+                          <br />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="home-buttons-container">
+                      <div class="home-buttons1"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-pasted-image">
+                <a
+                  href="https://cdn.vectorstock.com/i/1000x1000/62/10/good-neighborly-relations-concept-neighbors-vector-38586210.webp"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link11"
+                >
+                  <p class="home-caption09">VectorStock</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <figure
+          id="data:image/png;base64,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"
+          class="home-footer"
+        >
+          <div class="top-top">
+            <img
+              alt="pastedImage"
+              src="public/external/pastedimage-w5c-200w.png"
+              class="top-pasted-image"
+            />
+            <div class="branding-branding">
+              <img alt="image" src="public/logo.svg" class="branding-logo" />
+              <h2 class="branding-company-name"><span>HelpingHand</span></h2>
+            </div>
+          </div>
+          <span class="home-text41">
+            <span>Akanksha</span>
+            <br />
+            <a id="contact" href="mailto:akanksha@iiitb.ac.in" class="btn">akanksha@iiitb.ac.in</a>
+          </span>
+          <div class="home-container8">
+            <span class="home-text45">
+              <span>International institute of information</span>
+              <br />
+              <span>and technology bangalore,26/C,</span>
+              <br />
+              <span>Electronic City , Hosur road , Bangalore</span>
+            </span>
+          </div>
+          <div class="home-bottom">
+            <span class="home-copyright">© Copyright Company – 2022</span>
+          </div>
+        </figure>
+        <div>
+          <dangerous-html
+            html="<script>
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showSlide(n) {
+  slides[currentSlide].classList.remove('slide-active');
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].classList.add('slide-active');
+}
+
+const previousSlideButton = document.querySelector('#previous-slide');
+previousSlideButton.addEventListener('click', () => {
+  showSlide(currentSlide - 1);
+});
+
+const nextSlideButton = document.querySelector('#next-slide');
+nextSlideButton.addEventListener('click', () => {
+  showSlide(currentSlide + 1);
+});
+</script>"
+          ></dangerous-html>
+        </div>
+        <div>
+          <dangerous-html
+            html="<script>
+function setCookie(name, value, days) {
+  // Set the cookie with the given name, value, and expiration time (in days)
+  let expires = '';
+  if (days) {
+    let date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = '; expires=' + date.toUTCString();
+  }
+  document.cookie = name + '=' + (value || '') + expires + '; path=/';
+}
+
+function getCookie(name) {
+  // Get the value of the cookie with the given name
+  let nameEQ = name + '=';
+  let ca = document.cookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+function removeCookie(name) {
+  // Remove the cookie with the given name
+  setCookie(name, '', -1); // Set the cookie with an expiration time of -1 days
+}
+
+document.getElementById('close').addEventListener('click', function(){
+  // Get the persistence value
+  let persistence = document.getElementById('banner').getAttribute('data-persistence');
+  if (persistence === 'true') {
+    // If persistence is enabled, set a cookie to remember that the banner is closed
+    setCookie('bannerClosed', 'true', 1); // Set the cookie with an expiration time of 1 day
+  } else {
+    removeCookie('bannerClosed')
+  }
+  document.getElementById('banner').style.display = 'none'; // Hide the banner
+});
+
+window.addEventListener('load', function() {
+  // Check if the banner should be displayed or not
+  let bannerClosed = getCookie('bannerClosed');
+  if (bannerClosed === 'true') {
+    // If the bannerClosed cookie is set, hide the banner
+    document.getElementById('banner').style.display = 'none';
+  }
+});
+</script>"
+          ></dangerous-html>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
